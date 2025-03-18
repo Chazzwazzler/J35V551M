@@ -41,6 +41,8 @@ body{
     transform-style: preserve-3d;
     transform: rotateX(-9deg) rotateY(14deg) rotateZ(-4deg);
     opacity: 0;
+
+    display: flex;
 }
 
 #power-button {
@@ -52,10 +54,40 @@ body{
 }
 
 #countdown-timer {
-    font-size: 2.5cqmin;
-    color: white;
     text-align: center;
-    font-family: space-mono;
     top:30%;
     position:absolute;
+}
+
+/* ///////////////////////////////////////////// */
+
+
+body {
+    font-family: space-mono;
+    font-weight: bold;
+    font-size: 1.5cqmin;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: limegreen;
+    text-shadow: 0px 0px 10px limegreen;
+}
+
+#console-input{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+}
+
+#console-display{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    word-break: break-all; 
+    word-wrap: break-word;
+    display: flex;
+    align-items: flex-end;
+    overflow-y: hidden;
 }
