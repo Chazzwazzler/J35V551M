@@ -1,0 +1,93 @@
+/* I see you looking at the code! You wont find anything useful. Everything important is hidden away.  */
+
+@font-face {
+    font-family: space-mono;
+    src: url("../fonts/SpaceMono-Regular.ttf");
+}
+
+body{
+    margin: 0px; 
+    padding: 0px;
+}
+
+#background {
+    position: relative;
+
+    background-image: url("../img/Comp_Off.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    aspect-ratio: 4000 / 2252;
+    max-width: 100vw;
+    max-height: 100vh;
+
+    padding: 0px;
+    margin: 0px;
+
+    perspective: 121cqmin;
+}
+
+#background > * {
+    position: absolute;
+}
+
+
+#screen-bounds {
+    left: 11.1%;
+    top: 15%;
+    width: 29.8%;
+    height: 29.8%;
+    transform-style: preserve-3d;
+    transform: rotateX(-9deg) rotateY(14deg) rotateZ(-4deg);
+    opacity: 0;
+
+    display: flex;
+}
+
+#power-button {
+    left: 42%;
+    top: 47%;
+    width: 1cqmin;
+    height: 1cqmin;
+    opacity: 0;
+}
+
+#countdown-timer {
+    text-align: center;
+    top:30%;
+    position:absolute;
+    opacity: 0;
+}
+
+/* ///////////////////////////////////////////// */
+
+
+body {
+    font-family: space-mono;
+    font-weight: bold;
+    font-size: 1.5cqmin;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: limegreen;
+    text-shadow: 0px 0px 10px limegreen;
+}
+
+#console-input{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+}
+
+#console-display{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    word-break: break-all; 
+    word-wrap: break-word;
+    display: flex;
+    align-items: flex-end;
+    overflow-y: hidden;
+}
